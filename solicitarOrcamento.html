@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <title>Solicitar orçamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page">
+  <header>
+    <h1>Ambientes únicos<br> para você!</h1>
+    <img
+      src="img/img1.png"
+      alt="Desenho de design de interiores moderno com duas poltronas estofadas em verde, 
+      uma mesa lateral de madeira, plantas decorativas e um pendente de vime suspenso, 
+      tudo em um fundo liso com uma forma abstrata em verde-oliva."
+    />
+  </header>
+  <hr />
+  <nav>
+    
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="solicitarOrcamento.html">Solicite orçamento</a>
+    <a href="faq.html">FAQ</a>
+    
+  </nav>
+  <hr />
+  <main>
+    <section>
+          <h2>Tabela de preços</h2>
+
+    <table border="1" style="border-collapse: collapse;">
+      <thead>
+        <tr>
+            <th colspan="3">Tabela de Preços</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <th>Serviço</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Planejamento de Layout</td>
+        <td>Desenvolvimento do layout do espaço, incluindo disposição de móveis.</td>
+        <td>R$ 1.500,00</td>
+      </tr>
+      <tr>
+        <td>Escolha de Móveis e Decoração</td>
+        <td>Seleção e recomendação de móveis e itens de decoração.</td>
+        <td>R$ 1.200,00</td>
+      </tr>
+      <tr>
+        <td>Projeto de Iluminação</td>
+        <td>Desenvolvimento de um plano de iluminação personalizado.</td>
+        <td>R$ 1.000,00</td>
+    </tr>
+    <tr>
+        <td>Projeto de Marcenaria</td>
+        <td>Desenho e especificação de móveis planejados.</td>
+        <td>R$ 2.000,00</td>
+    </tr>
+    <tr>
+        <td>Consultoria</td>
+        <td>Consultoria presencial ou online para orientação no projeto.</td>
+        <td>R$ 500,00</td>
+    </tr>
+
+    <tr>
+        <td>Projeto Completo</td>
+        <td>Pacote completo incluindo todos os serviços acima.</td>
+        <td>R$ 7.000,00</td>
+    </tr>
+  </tbody>
+
+</table>
+    </section>
+    <section>
+
+      <h2>Solicite orçamento</h2>
+
+    
+  <p>Preencha o formulário abaixo para solicitar um orçamento:</p>
+  <form>
+    <fieldset>
+      <label for="fnome">Nome:</label><br>
+      <input type="text" id="fnome" name="nome" placeholder="Seu nome aqui" required />
+      </fieldset>
+
+  <fieldset>
+      <label for="femail">E-mail:</label><br>
+      <input type="email" id="femail" name="email" placeholder="Seu E-mail aqui" required>
+  </fieldset>
+  <fieldset>
+    <label for="ftelefone">Telefone: </label><br />
+    <input
+      type="tel"
+      id="ftelefone"
+      name="telefone"
+      placeholder="Seu telefone pessoal"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <label for="fendereco">Endereço:</label><br />
+    <input
+      type="text"
+      id="fendereco"
+      placeholder="Seu endereço aqui"
+      required
+    />
+  </fieldset>
+
+  <fieldset>
+
+    <label>Tipo de Projeto:</label><br>
+    <input type="radio" id="residencial" name="tipo_projeto" value="Residencial">
+    <label for="residencial">Residencial</label><br>
+
+    <input type="radio" id="comercial" name="tipo_projeto" value="Comercial">
+    <label for="comercial">Comercial</label><br>
+
+    <input type="radio" id="outro" name="tipo_projeto" value="Outro">
+    <label for="outro">Outro (especificar):</label>
+
+
+
+    <input type="text" id="outro_especificar" name="outro_especificar"><br><br>
+</fieldset>
+    <fieldset>
+      <label for="fserviconecessario">Serviço Necessário:</label><br />
+      <select id="fserviconecessario" name="serviconecessario" required>
+        <option disabled selected value="">Selecione uma opção</option>
+        <option>Planejamento de layout</option>
+        <option>Escolha de móveis e decoração</option>
+        <option>Projeto de iluminação</option>
+        <option>Projeto de marcenaria</option>
+        <option>Consultoria</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="cFoto">Fotos ou plantas do local (anexar arquivos, se possível):</label>
+      <input type="file" id="cFoto" name="foto" accept=".jpg,.png"/> 
+      <small>Arquivo de extensão .png</small>
+    </fieldset>
+  <fieldset>
+    <label>Comentários adicionais:</label><br>
+    <textarea id="fdescricao" name="descricao" placeholder="Digite aqui seus comentários adicionais..."
+        required></textarea>
+  </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+  <main>
+  
+  <footer><hr />
+    <nav>
+    <a href="https://instagram.com/moveisparavoce"
+    >Instagram</a>
+  <a href="https://facebook.com/moveisparavoce"
+    >Facebook</a>
+  <a href="https://twitter.com/moveisparavoce"
+    >Twitter</a></nav>
+
+    <p>&copy; 2024 Ambientes Decorados. Todos os direitos reservados.</p>
+
+</footer></div>
+</body>
+</html>
