@@ -2,6 +2,9 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+
+  <link rel="shortcut icon" href="img/favicon.webp" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -99,14 +102,15 @@
   <p>Preencha o formulário abaixo para solicitar um orçamento:</p>
   <form>
     <fieldset>
-      <label for="fnome">Nome:</label><br>
+      <label for="fnome">Nome:</label><br  />
       <input type="text" id="fnome" name="nome" placeholder="Seu nome aqui" required />
       </fieldset>
 
   <fieldset>
-      <label for="femail">E-mail:</label><br>
+      <label for="femail">E-mail:</label><br />
       <input type="email" id="femail" name="email" placeholder="Seu E-mail aqui" required>
   </fieldset>
+
   <fieldset>
     <label for="ftelefone">Telefone: </label><br />
     <input
@@ -117,6 +121,7 @@
       required
     />
   </fieldset>
+
   <fieldset>
     <label for="fendereco">Endereço:</label><br />
     <input
@@ -129,19 +134,19 @@
 
   <fieldset>
 
-    <label>Tipo de Projeto:</label><br>
+    <label>Tipo de Projeto:</label><br />
     <input type="radio" id="residencial" name="tipo_projeto" value="Residencial">
-    <label for="residencial">Residencial</label><br>
+    <label for="residencial">Residencial</label><br />
 
     <input type="radio" id="comercial" name="tipo_projeto" value="Comercial">
-    <label for="comercial">Comercial</label><br>
+    <label for="comercial">Comercial</label><br />
 
     <input type="radio" id="outro" name="tipo_projeto" value="Outro">
     <label for="outro">Outro (especificar):</label>
 
 
 
-    <input type="text" id="outro_especificar" name="outro_especificar"><br><br>
+    <input type="text" id="outro_especificar" name="outro_especificar">
 </fieldset>
     <fieldset>
       <label for="fserviconecessario">Serviço Necessário:</label><br />
@@ -156,12 +161,12 @@
       </select>
     </fieldset>
     <fieldset>
-      <label for="cFoto">Fotos ou plantas do local (anexar arquivos, se possível):</label>
-      <input type="file" id="cFoto" name="foto" accept=".jpg,.png"/> 
+      <label for="fFoto">Fotos ou plantas do local (anexar arquivos, se possível):</label>
+      <input type="file" id="fFoto" name="foto" accept=".jpg,.png"/> 
       <small>Arquivo de extensão .png</small>
     </fieldset>
   <fieldset>
-    <label>Comentários adicionais:</label><br>
+    <label>Comentários adicionais:</label><br />
     <textarea id="fcomentarios" name="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários adicionais..."></textarea>
   </fieldset>
 
